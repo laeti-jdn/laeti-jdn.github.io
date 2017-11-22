@@ -1,4 +1,75 @@
 html * {
+    box-sizing: border-box;
+}
+body {
 
-  font-family: 'Ruslan Display', cursive;
+    margin: 0;
+}
+
+a {
+   color:black;
+
+}
+
+  .marquee {
+    width: 100%;
+    overflow: hidden;
+    font-size: 25px;
+    font-family: 'Rakkas', cursive;
+
+}
+
+  .fondnoir {
+    background: black;
+    color:white;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+
+}
+
+  .images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 4px;
+
+}
+
+  .image {
+    flex: 0 0 20%;
+    padding: 4px;
+    display:block;
+    font-size: 0;
+
+}
+
+  .images img {
+    border-color: white;
+    max-width: 100%;
+    border:3px;
+
+}
+
+  .liens {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    padding: 4px;
+    text-decoration:none;
+
+}
+
+  .présentation {
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    padding: 4px;
+    text-decoration:none;
+    font-size: 12px;
+    position:fixed;
+    padding-left: 40px;
+    text-align: left;
+    width: 300px;
+    height:600px;
+
 }

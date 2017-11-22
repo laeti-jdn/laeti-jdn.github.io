@@ -3,4 +3,6 @@ $('.marquee').marquee({
   direction: 'left',
   duplicated: true,
   duration: 15000,
+  startVisible: true,
+  gap: 5,
 });
