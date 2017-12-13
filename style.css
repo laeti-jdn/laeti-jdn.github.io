@@ -15,16 +15,17 @@ a {
   .marquee {
     width: 100%;
     overflow: hidden;
-    font-size: 25px;
-    font-family: 'Rakkas', cursive;
-
+    font-size: 23px;
+    font-family: 'Germania One', cursive;
+    border-style: double;
+    border-width: 3px;
 }
 
   .fondnoir {
     background: black;
     color:white;
-    font-size: 25px;
-    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    font-family: 'Cormorant Garamond', serif;
     font-weight: 100;
 
 }
@@ -57,7 +58,7 @@ a {
     border-color: white;
     max-width: 100%;
     border:3px;
-    filter:blur(2.5px) grayscale(100%);
+    filter:blur(2.5px);
 }
 
 .images img:hover {
@@ -65,14 +66,14 @@ a {
 }
 
   .liens {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-weight: 100;
     padding: 4px;
 }
 
   .présentation {
 
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-weight: 100;
     padding: 4px;
     text-decoration:none;
@@ -90,7 +91,7 @@ a {
     max-width: 70%;
     border: 0px;
     margin-left: 1%;
-    margin-top: 2%;
+    margin-top: 1%;
     justify-content: left;
     font-size: 0;
     display: flex;
@@ -114,15 +115,30 @@ a {
 .gif img {
   max-width: 100%;
 }
+
+.titre {
+  margin-top: 1%;
+  margin-left: 70%;
+  margin-right: 6%;
+  font-family: 'Germania One', cursive;
+  font-weight: 100;
+  padding: 4px;
+  font-size: 40px;
+  position:fixed;
+  padding-left: 40px;
+  text-align: left;
+  height:600px;
+
+}
  .texteprojet {
 
-margin-top: 3%;
+margin-top: 4%;
 margin-left: 70%;
-margin-right: 3%;
-font-family: 'Roboto', sans-serif;
+margin-right: 5%;
+font-family: 'Cormorant Garamond', serif;
 font-weight: 100;
 padding: 4px;
-font-size: 12px;
+font-size: 13px;
 position:fixed;
 padding-left: 40px;
 text-align: left;
@@ -141,4 +157,26 @@ padding: 4px;
 
 margin-top: 2%;
 padding: 4px;
+}
+
+.boutonretour{
+  margin-top: 1%;
+  margin-left: 91%;
+  margin-right: 6%;
+  font-family: 'Germania One', cursive;
+  font-weight: 100;
+  padding: 4px;
+  font-size: 40px;
+  position:fixed;
+  padding-left: 40px;
+  text-align: left;
+  height:600px;
+
+
+}
+
+.megatitre {
+font-family: 'Germania One', cursive;
+font-size: 70px;
+text-align: center;
 }
