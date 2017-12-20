@@ -1,133 +1,158 @@
 html * {
-    box-sizing: border-box;
-background-color:white;
+  box-sizing: border-box;
 }
+
 body {
-    font-family: 'Akzidenz';
-    font-weight: 300;
-    margin: 0;
+  background-color: white;
+  font-family: 'Akzidenz';
+  font-weight: 300;
+  margin: 0;
 }
 
 a {
-   color:black;
-   text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
-  .marquee {
-    width: 100%;
-    overflow: hidden;
-    font-size: 23px;
-    font-family: 'Germania One', cursive;
-    border-style: double;
-    border-width: 3px;
-    border-left: 0px;
-    border-right: 0px;
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  font-size: 23px;
+  font-family: 'Germania One', cursive;
+  border-style: double;
+  border-width: 3px;
+  border-left: 0px;
+  border-right: 0px;
 }
 
-  .fondnoir {
-    background: black;
-    color:white;
-    font-size: 23px;
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 100;
-
+.fondnoir {
+  background: black;
+  color: white;
+  font-size: 23px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 100;
 }
 
 .tab {
   tab-size: 4px;
-  display:block;
+  display: block;
   font-size: 0;
   border: 3px;
-
-
-
-}
-  .images {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 4px;
 }
 
+.images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 4px;
+}
+
+.smiley {
+  position: fixed;
+  right: 16px;
+  font-size: 40px;
+  font-style: italic;
+}
+
+.lien-apropos {
+  margin: 10px;
+  display: inline-block;
+}
+
+.image {
+  flex: 0 0 20%;
+  padding: 4px;
+  display: block;
+  font-size: 0;
+  position: relative;
+}
+
+.image h3 {
+  position: absolute;
+  z-index: 1;
+  background: white;
+  padding: .25em .5em;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 960px) {
   .image {
-    flex: 0 0 20%;
-    padding: 4px;
-    display:block;
-    font-size: 0;
+    flex: 0 0 25%;
   }
+}
 
-  @media screen and (max-width: 960px) {
-    .image {
-      flex: 0 0 25%;
-    }
+@media screen and (max-width: 600px) {
+  .image {
+    flex: 0 0 50%;
   }
+}
 
-  @media screen and (max-width: 600px) {
-    .image {
-      flex: 0 0 50%;
-    }
-  }
-
-  .images img {
-    border-color: white;
-    max-width: 100%;
-    border:3px;
-    filter:blur(2.5px);
+.images img {
+  border-color: white;
+  max-width: 100%;
+  border: 3px;
+  filter: blur(2.5px);
 }
 
 .images img:hover {
-  filter:none;
+  filter: none;
 }
 
-  .liens {
+.liens {
   font-family: 'Germania One', cursive;
-    font-weight: 300;
-    padding: 2px;
-    margin-left: 10%;
-    font-size: 20px;
-}
+  font-weight: 300;
+  margin-left: 10%;
+  font-size: 16px;
+  }
 
-.liens  a:hover {
+  .liensborder{
+    border: 1px dotted black;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    padding-bottom: 4px;
+    margin-top: 4px;
+
+  }
+
+.liens a:hover {
   color: blue;
   font-style: italic;
-
 }
 
 .liens h5 {
-font-family:'Akzidenz';
-font-weight: 300;
-font-size: 10px;
-
-
+  font-family: 'Akzidenz';
+  font-weight: 300;
+  font-size: 10px;
 }
 
-  .présentation {
-
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 100;
-    padding: 4px;
-    text-decoration:none;
-    font-size: 12px;
-    position:fixed;
-    padding-left: 40px;
-    text-align: left;
-    width: 300px;
-    height:600px;
-
+.présentation {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 100;
+  padding: 4px;
+  text-decoration: none;
+  font-size: 12px;
+  position: fixed;
+  padding-left: 40px;
+  text-align: left;
+  width: 300px;
+  height: 600px;
 }
 
 .gif {
-    display:block;
-    max-width: 70%;
-    border: 0px;
-    margin-left: 1%;
-    margin-top: 1%;
-    justify-content: left;
-    font-size: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: block;
+  max-width: 80%;
+  border: 0px;
+  justify-content: left;
+  font-size: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
+
 .gif figure {
   margin-left: 0;
   margin-right: 10px;
@@ -146,56 +171,85 @@ font-size: 10px;
   max-width: 100%;
 }
 
-.titre {
-  margin-top: 1%;
-  margin-left: 70%;
-  margin-right: 6%;
-  padding: 4px;
-  position:fixed;
-  padding-left: 40px;
+article h3 {
   text-align: left;
-  height:600px;
   font-family: 'Germania One', cursive;
-  font-size: 40px;
-  font-weight: bold;
-  color: blue;
+  font-size: 30px;
+  color: black;
   font-style: italic;
+  margin: 0;
+  margin-left: 19px;
+  border-bottom: 2px solid black;
+  margin-top: 3px;
+  padding-bottom: 3px;
 
 }
 
-.titre:hover{
-  color:blue
+
+
+article h3:hover {
+  color: blue
+}
+
+article h4 {
+  margin: 0 -4px;
+  font-family: 'Germania One', cursive;
+  font-weight: 300;
+  padding: 8px 4px;
+
+
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.contenuprojet {
+  width: 20%;
+
 }
 
 .texteprojet {
-margin-top: 4%;
-margin-left: 70%;
-margin-right: 9%;
-font-family: 'Akzidenz';
-font-weight:lighter;
-padding: 4px;
-font-size: 12px;
-position:fixed;
-padding-left: 40px;
-text-align: left;
-height:600px;
+  font-family: 'Akzidenz';
+  font-weight: lighter;
+  padding: 4px;
+  font-size: 11px;
+  text-align: left;
+  height: 600px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    flex-wrap: wrap-reverse;
+  }
+  .gif {
+    max-width: 100%;
+  }
+  .contenuprojet {
+    width: 100%;
+  }
+  .texteprojet {
+    height: auto;
+  }
 }
 
 .projet1 {
-
-flex: 0 0 20%;
-max-width: 100%;
-padding: 4px;
-
+  flex: 0 0 20%;
+  max-width: 100%;
+  padding: 4px;
 }
 
 .proj {
-
-margin-top: 2%;
-padding: 4px;
+  margin-top: 2%;
+  padding: 4px;
 }
 
-.liens2{
+.liens2 {
   margin-top: 1%;
   margin-left: 1%;
   margin-right: 6%;
@@ -203,111 +257,80 @@ padding: 4px;
   font-weight: 100;
   padding: 4px;
   font-size: 40px;
-  position:fixed;
+  position: fixed;
   padding-left: 40px;
   text-align: left;
-  height:600px;
+  height: 600px;
 }
 
 .liens2 a:hover {
-color: blue;
-font-style: italic;
-
-}
-
-
+  color: blue;
+  font-style: italic;
 }
 
 .boite {
-  height:99%;
-  font-size:16px;
-  border: 4px solid black;
-  padding-left: 7px;
+  height: 520px;
+  font-size: 20px;
+  border: 2px solid black;
   padding-bottom: 4px;
-  margin-right:4px;
-  margin-bottom:4px;
+  margin-right: 4px;
+  margin-left: -20px;
+  margin-bottom: 4px;
+  margin-top: 40px;
+  background-color: white;
   box-shadow: 4px 4px 0 0 black;
+  font-family: 'Germania One', cursive;
+  position: fixed;
+  right: 30px;
 
 }
 
 .boite1 {
-  height:99%;
-  font-size:13px;
-  font-weight: 300;
-  background: white;
-  border: 4px solid black;
-  padding-left: 7px;
+  height: 500px;
+  font-size: 20px;
+  border: 2px solid black;
   padding-bottom: 4px;
-  margin-right:4px;
-  margin-bottom:4px;
+  margin-bottom: 4px;
+  margin-top: 12px;
+  background-color: white;
   box-shadow: 4px 4px 0 0 black;
-}
-
-.boite1 h4{
-font-family: 'Akzidenz';
+  font-family: 'Germania One', cursive;
 
 }
-
-.boite1 h3 {
-font-family: 'Germania One', cursive;
-font-size: 40px;
-font-weight: bold;
-color:black;
-text-decoration: none;
-padding-top: -10%;
-}
-.boite1 h3:hover {
-color:blue;
-font-style: italic;
-}
-
 .boite.accueil {
-
-  width: 200px;
+  width: 60px;
   position: absolute;
-  left:50%;
-  top:50%;
-  transform: translate(-50%,-50%);
-  height:75px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 40px;
   font-size: 20px;
   font-family: 'Germania One', cursive;
   text-align: center;
+}
 
-
-
+.boite.accueil h3 {
+  margin: 0;
 }
 
 .boite {
-color: black;
-text-decoration: none;
-
+  color: black;
+  text-decoration: none;
 }
 
 .boite:hover {
-color: blue;
-font-style: italic;
-
+  color: blue;
+  font-style: italic;
 }
-
 
 .boite.accueil a {
   color: black;
   text-decoration: none;
-
 }
 
 .boite.accueil a:hover {
-color: blue;
-font-style: italic;
-
-}
-
-.boite.accueil h5 {
-font-family: 'Akzidenz';
-font-weight: 300;
-font-size: 10px;
-margin-bottom: 80%;
-
+  color: blue;
+  font-style: italic;
 }
 
 .megatitre {
@@ -324,11 +347,15 @@ margin-bottom: 80%;
   margin-left: 5%;
   margin-right: 75%;
   font-family: 'Akzidenz';
-  font-weight:lighter;
+  font-weight: lighter;
   padding: 4px;
   font-size: 12px;
-  position:fixed;
+  position: fixed;
   padding-left: 40px;
   text-align: left;
-  height:600px;
-  }
+  height: 600px;
+}
+
+.bleu {
+  color: blue;
+}
