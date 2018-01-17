@@ -1,28 +1,23 @@
-html * {
-  box-sizing: border-box;
-}
 
 body {
-  background-color: white;
+  background-color: black;
   font-family: 'Akzidenz';
   font-weight: 300;
-  margin: 0;
+
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 .marquee {
   width: 100%;
   overflow: hidden;
-  font-size: 23px;
-  font-family: 'Germania One', cursive;
-  border-style: double;
-  border-width: 3px;
-  border-left: 0px;
-  border-right: 0px;
+  font-family: 'Akzidenz';
+  font-weight: 500;
+  color: white;
+
 }
 
 .fondnoir {
@@ -44,7 +39,6 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 4px;
 }
 
 .smiley {
@@ -59,9 +53,14 @@ a {
   display: inline-block;
 }
 
+.colonne {
+  flex: 0 0 18%;
+  padding: 7px;
+}
+
+
 .image {
-  flex: 0 0 20%;
-  padding: 4px;
+  padding: 7px;
   display: block;
   font-size: 0;
   position: relative;
@@ -93,35 +92,43 @@ a {
   border-color: white;
   max-width: 100%;
   border: 3px;
-  filter: blur(2.5px);
+
 }
 
 .images img:hover {
-  filter: none;
+filter: none;
+filter: blur(2.5px);
 }
 
+
 .liens {
-  font-family: 'Germania One', cursive;
-  font-weight: 300;
-  margin-left: 10%;
-  font-size: 16px;
+  font-family: 'Akzidenz';
+  font-weight: 500;
+  margin-left: 1%;
+  font-size: 40px;
+  margin-bottom: 6px;
+  color:white;
   }
 
   .liensborder{
-    border: 1px dotted black;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    padding-bottom: 4px;
-    margin-top: 4px;
+  margin-top: 4px;
 
   }
 
+.lienspécial{
+  margin-left: 2%;
+  margin-top: 2%;
+  font-size: 35px;
+}
+
 .liens a:hover {
-  color: blue;
   font-style: italic;
 }
 
+.lienspécial a:hover {
+  font-style: italic;
+
+}
 .liens h5 {
   font-family: 'Akzidenz';
   font-weight: 300;
@@ -264,21 +271,18 @@ main {
 }
 
 .liens2 a:hover {
-  color: blue;
+
   font-style: italic;
 }
 
 .boite {
   height: 520px;
   font-size: 20px;
-  border: 2px solid black;
   padding-bottom: 4px;
   margin-right: 4px;
   margin-left: -20px;
   margin-bottom: 4px;
   margin-top: 40px;
-  background-color: white;
-  box-shadow: 4px 4px 0 0 black;
   font-family: 'Germania One', cursive;
   position: fixed;
   right: 30px;
@@ -286,17 +290,22 @@ main {
 }
 
 .boite1 {
-  height: 500px;
-  font-size: 20px;
-  border: 2px solid black;
-  padding-bottom: 4px;
-  margin-bottom: 4px;
-  margin-top: 12px;
-  background-color: white;
-  box-shadow: 4px 4px 0 0 black;
-  font-family: 'Germania One', cursive;
-
+    height: 500px;
+    font-size: 65px;
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+    margin-top: -20px;
+    margin-left: -10px;
+    position: fixed;
+    font-family: 'Germania One', cursive;
 }
+
+.boite1 a:hover {
+  color: blue;
+  font-style: italic;
+  }
+
+
 .boite.accueil {
   width: 60px;
   position: absolute;
@@ -323,37 +332,30 @@ main {
   font-style: italic;
 }
 
-.boite.accueil a {
-  color: black;
-  text-decoration: none;
-}
-
-.boite.accueil a:hover {
-  color: blue;
-  font-style: italic;
-}
-
 .megatitre {
-  font-family: 'Germania One', cursive;
-  font-size: 25px;
   font-weight: bold;
-  color: blue;
+  font-family: serif;
+  font-size: 22px;
+  color: white;
   font-style: italic;
-  padding-left: 10%;
+  padding-left: 80%;
+  position: fixed;
+  padding-top: 2%;
+
 }
 
 .me {
-  margin-top: -1%;
-  margin-left: 5%;
-  margin-right: 75%;
+  margin-top: 6%;
+  margin-left: 75%;
+  margin-right: 4%;
   font-family: 'Akzidenz';
   font-weight: lighter;
-  padding: 4px;
-  font-size: 12px;
+  font-size: 13px;
   position: fixed;
-  padding-left: 40px;
+  padding-left: 33px;
   text-align: left;
   height: 600px;
+  color: white;
 }
 
 .bleu {
