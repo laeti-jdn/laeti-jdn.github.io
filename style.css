@@ -40,17 +40,18 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  z-index: -1;
+  padding-left: 22%;
 }
 
-.déroulement {
+.lien1 {
   position: fixed;
-  right: 70px;
-  top: 139px;
+  left: 355px;
+  top: 157px;
   font-size: 25px;
-
 }
 
-.déroulement a:hover {
+.lien1 a:hover {
 color: yellow;
 filter:italic;
 
@@ -62,21 +63,22 @@ filter:italic;
 }
 
 .colonne {
-  flex: 0 0 18%;
-  padding: 7px;
+  flex: 0 0 29%;
+  padding: 5px;
 }
 
 
 .image {
-  padding: 7px;
+  padding: 5px;
   display: block;
   font-size: 0;
   position: relative;
+  padding-left: 28%;
 }
 
 .image h3 {
   position: absolute;
-  z-index: 1;
+/*  z-index: 1;*/
   background: white;
   padding: .25em .5em;
   height: auto;
@@ -133,7 +135,7 @@ filter: blur(2.5px);
 .liens4{
   font-family: 'Akzidenz';
   font-weight: 500;
-  margin-left: 344px;
+  margin-left: 335px;
   margin-right: 15px;
   font-size: 35px;
   margin-bottom: 6px;
@@ -142,8 +144,9 @@ filter: blur(2.5px);
 }
 
 .liensborder{
-  margin-top: 4px;
-position: fixed;
+  margin-top: -10px;
+  position: fixed;
+  z-index: 1;
   }
 
   .titrage {
@@ -257,12 +260,11 @@ article h4 {
 main {
   display: flex;
   flex-wrap: wrap;
-  padding-right: 70px;
+margin-right: 10px;
 }
 
-.contenuprojet {
+#contenuprojet {
   width: 20%;
-
 }
 
 .texteprojet {
@@ -376,4 +378,15 @@ main {
   text-align: left;
   height: 600px;
   color: white;
+}
+
+.bandeau {
+  background-color: black;
+  padding-top: 16px;
+  padding-bottom: 1em;
+  z-index: 1;
+}
+
+.hide {
+  display: none;
 }

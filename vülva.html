@@ -17,25 +17,36 @@
 </head>
 
 <header>
-
   <div class="liensborder">
-
-  <div class="liens">
-    <a href="index.html">текно гърл graphic design</a>
-  </div>
-
-    <div class="marquee">
-      experimenting experimenting experimenting experimenting experimenting experimenting experimenting experimenting experimenting experimenting experimenting experimenting
+    <div class="bandeau">
+      <div class="liens">
+        <a href="index.html">текно гърл graphic design</a>
+      </div>
+      <div class="marquee">
+        experimenting experimenting experimenting experimenting experimenting experimenting experimenting experimenting experimenting experimenting experimenting experimenting
+      </div>
     </div>
     <div class="liens3">
       <a href="index.html">&#8604;</div>
 
         <div class="liens4">
-          <a href="index.html">&#9758;</div>
+          <a id="on" class="" onclick="document.getElementById('contenuprojet').classList.remove('hide');document.getElementById('on').classList.add('hide');document.getElementById('off').classList.remove('hide');">&#9758;</a>
+          <a id="off" class="hide" onclick="document.getElementById('contenuprojet').classList.add('hide');document.getElementById('off').classList.add('hide');document.getElementById('on').classList.remove('hide');">&#9756;</a>
+        </div>
 
 </header>
 
 <main>
+
+  <article id="contenuprojet" class="boite hide">
+  <div class="texteprojet">
+    <p>Ce fanzine vulvique ne provoque pas de cancer. Il n’est que le témoignage d’un engagement brut,
+      profond et silencieux à l’intimité féminine. C’est en quelque sorte une invitation à libérer la vulve,
+      elle qui porte tant de surnoms. Propose simplement une rencontre décomplexée avec elle par une exhibition
+      publique sensible.</p>
+  </div>
+  </article>
+
   <div class="gif">
     <figure>
       <img src="./images/fanzine—vülva/batch_7.JPG" alt="">
