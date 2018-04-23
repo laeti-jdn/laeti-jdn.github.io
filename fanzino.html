@@ -17,51 +17,58 @@
 </head>
 
 <header>
-
   <div class="liensborder">
-
-  <div class="liens">
-    <a href="index.html">текно гърл graphic design</a>
-  </div>
-
-    <div class="marquee">
-      experimenting experimenting experimenting experimenting experimenting experimenting experimenting experimenting experimenting experimenting experimenting experimenting
+    <div class="bandeau">
+      <div class="liens">
+        <a href="index.html">текно гърл graphic design</a>
+      </div>
+      <div class="marquee">
+        experimenting experimenting experimenting experimenting experimenting experimenting experimenting experimenting experimenting experimenting experimenting experimenting
+      </div>
     </div>
     <div class="liens3">
       <a href="index.html">&#8604;</div>
 
-        <div class="liens4">
-          <a href="index.html">&#9758;</div>
+        <div class="liens5">
+          <a id="on" class="" onclick="document.getElementById('contenuprojet').classList.remove('hide');document.getElementById('on').classList.add('hide');document.getElementById('off').classList.remove('hide');">&#9758;</a>
+          <a id="off" class="hide" onclick="document.getElementById('contenuprojet').classList.add('hide');document.getElementById('off').classList.add('hide');document.getElementById('on').classList.remove('hide');">&#9756;</a>
+        </div>
+
 
 </header>
 
 <main>
 
-  <article class="boite contenuprojet">
+  <article id="contenuprojet" class="boite hide">
   <div class="texteprojet">
-    <p>Ce fanzine vulvique ne provoque pas de cancer. Il n’est que le témoignage d’un engagement brut,
-      profond et silencieux à l’intimité féminine. C’est en quelque sorte une invitation à libérer la vulve,
-      elle qui porte tant de surnoms. Propose simplement une rencontre décomplexée avec elle par une exhibition
-      publique sensible.</p>
+    <br>
+    <i><u>Identité visuelle</u></i>
+    <p>Ensemble de recherches graphiques visant à créer l’identité visuelle globale de la fanzinothèque fictive Contre-courant.
+      Elle se devait d’inviter à un nouveau regard sur la culture du livre, rendre accessible cet univers alternatif et underground du
+      fanzine sans en dénaturer les fondements. En quelques mots: Mobilité, DIY et simplicité.
+  </p>
   </div>
-</article>
+  </article>
 
   <div class="gif">
-    <figure>
-      <img src="./images/fanzino/fac3.jpg" alt="">
-    </figure>
+  <figure>
+    <img src="./images/fanzino/fac3.jpg" alt="">
+  </figure>
 
-    <figure>
-      <img src="./images/fanzino/fac1.jpg" alt="">
-    </figure>
+  <figure>
+    <img src="./images/fanzino/fac1.jpg" alt="">
+  </figure>
 
-    <figure>
-      <img src="./images/fanzino/fac2.jpg" alt="gif" />
-    </figure>
+  <figure>
+    <img src="./images/fanzino/fac2.jpg" alt="gif" />
+  </figure>
 
 
 </main>
 <script src="./scripts/script.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+
 </script>
 </body>
 
